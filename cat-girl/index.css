@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#binocular-hand {
+  transform-origin: right;
+  transform-box: fill-box;
+  animation: hand 2s ease-in-out infinite alternate;
+}
+
+@keyframes hand {
+  to {
+    transform: rotateZ(-30deg);
+  }
+}
+
+#details,
+#background {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: details 1s ease-in-out infinite alternate;
+}
+
+@keyframes details {
+  to {
+    transform: rotateY(20deg);
+  }
+}

@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#tail {
+  transform-origin: bottom;
+  transform-box: fill-box;
+  animation: cat 1s linear infinite alternate;
+}
+
+@keyframes cat {
+  to {
+    transform: rotateZ(20deg);
+  }
+}
+
+#small-tree {
+  transform-origin: bottom;
+  transform-box: fill-box;
+  animation: tree 4s linear infinite alternate;
+}
+
+@keyframes tree {
+  50% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(-10deg);
+  }
+}
+
+#left-tree {
+  transform-origin: bottom;
+  transform-box: fill-box;
+  animation: left-tree 4s linear infinite alternate;
+}
+
+@keyframes left-tree {
+  50% {
+    transform: rotateZ(5deg);
+  }
+  100% {
+    transform: rotateZ(-5deg);
+  }
+}
+
+#right-tree {
+  transform-origin: bottom;
+  transform-box: fill-box;
+  animation: right-tree 4s linear infinite alternate;
+}
+
+@keyframes right-tree {
+  50% {
+    transform: rotateZ(3deg);
+  }
+  100% {
+    transform: rotateZ(-3deg);
+  }
+}
